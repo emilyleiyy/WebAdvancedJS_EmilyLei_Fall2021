@@ -2,7 +2,7 @@
 var allQuestions = [];
 // Store each question in an object.
 allQuestions[0] = {
-    question: "What color do you see",
+    question: "What color do you see in this page?",
     choices: ["Black", "White","No color"],
     correctAnswer: 2
 };
@@ -16,6 +16,7 @@ allQuestions[2] = {
     choices: ["Yes", "No", "Not sure"],
     correctAnswer: 0
 };
+
 
 // Display first question
 document.getElementById("question").textContent = allQuestions[0].question;
@@ -33,33 +34,30 @@ var userScore = 0;
 var questionNum = 0;
 
 // When the NEXT button is clicked, the user's score is updated, the current question is hidden, and the next question is revealed.
-  $("#next").click(function() {
+$("#next").click(function() {
    
-  // Check if User answered question.
-  // If so, update user's score. If not, do not continue quiz until answer is given.
+// Check if User answered question.
   if($("form input[name=answer]:checked").val() == allQuestions[questionNum].correctAnswer) {
     userScore++;
   }
   
-  // If last question, show user's score rather than next question
-    if (questionNum == (allQuestions.length - 1)) {
+// If last question, show user's result rather than next question
+  if (questionNum == (allQuestions.length - 1)) {
     document.getElementsByTagName("form")[0].style.display = "none";
-
-    if (userScore=1){
-        document.getElementById("question").textContent ="The color is amazing.";
+    if (userScore==0){
+      document.getElementById("question").textContent ="Explore more in color.";
     }
-
-    if (userScore=2){
-        document.getElementById("question").textContent ="Color painted our world.";
+    if (userScore==1){
+      document.getElementById("question").textContent ="The color is amazing.";
     }
-
-    if (userScore=3){
-        document.getElementById("question").textContent ="Let color to speak for us.";
+    if (userScore==2){
+      document.getElementById("question").textContent ="Color painted our world.";
     }
-
+    if (userScore==3){
+      document.getElementById("question").textContent ="Let color to speak for us.";
     }
+  }
   
-  // Current question is not the last question, so increment the current question index
     questionNum++;
   
   // Replace current question with next question
@@ -70,4 +68,4 @@ var questionNum = 0;
     document.getElementById("choice1").textContent = allQuestions[questionNum].choices[1];
 
     document.getElementById("choice2").textContent = allQuestions[questionNum].choices[2];
-	});
+});

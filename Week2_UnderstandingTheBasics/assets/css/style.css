@@ -4,17 +4,36 @@ body {
 }
 
 h1 {
+	font-family: 'Times New Roman', Times, serif;
 	text-align: center;
 	font-size: 80px;
-	margin-bottom: 2em;
+	margin-top: 3em;
+	margin-bottom: 1.5em;
 	color: #BBB;
+	opacity: 0;
+	animation: fadeIn 2s ease-in both;
 }
 
 form {
+	font-size: 1.5em;
+	font-family: 'Times New Roman', Times, serif;
     text-align:center;
     color: white;
+	animation: fadeIn 5s ease-in both;
+}
+#next {
+	font-size: .8em;
+	font-family: 'Times New Roman', Times, serif;
+  	margin-top:60px;
 }
 
-#next {
-  margin-top:30px;
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -5%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
