@@ -1,53 +1,27 @@
-// JavaScript Document
-// Claudio Gomboli . the EGGS LAB
-// 2012 / 8 / 29
-// Responsive animated gallery
+$(function(){
+    showScroll();
+    function showScroll(){
+        $(window).scroll( function() { 
+            var scrollValue=$(window).scrollTop();
+            scrollValue > 100 ? $('div[class=scroll]').fadeIn():$('div[class=scroll]').fadeOut();
+        } );	
+        $('#scroll').click(function(){
+            $("html,body").animate({scrollTop:0},200);	
+        });	
+    }
+})
 
-$('.portfolio').each(function(index)
-{
-    $(this).attr('id', 'img' + (index + 1));
-});
-    
-$('.portfolio').each(function(){
-  $('#navi').append('<div class="circle"></div>');
-});
-  
-$('.circle').each(function(index)
-{
-    $(this).attr('id', 'circle' + (index + 1));
-});   
-   
-$('.portfolio').click(function(){
-if($(this).hasClass('opened')){
-    $(this).removeClass('opened');
-    $(".portfolio").fadeIn("fast");
-    $(this).find('.ombra').fadeOut();
-    $("#navi div").removeClass("activenav");
-}
-else{
-	var indexi = $("#maincontent .portfolio").index(this) + 1;
-    $(this).addClass('opened'); 
-    $(".portfolio").not(this).fadeOut("fast");
-    $(this).find('.ombra').fadeIn();
-    $("#circle" + indexi).addClass('activenav'); 
-}
-});	
 
-//navi buttons
-$("#navi div").click(function() {
-if($(this).hasClass("activenav")){
-	return false;
-}
-		
-	$("#navi div").removeClass("activenav");
-	$(".portfolio").removeClass('opened');
-	$(".portfolio").show();
-        $('.ombra').hide();
-		
-	var index = $("#navi div").index(this) + 1;
-	$("#img" + index).addClass('opened'); 
-    $(".portfolio").not("#img" + index).fadeOut("fast");
-    $("#img" + index).find('.ombra').fadeIn();
-        
-    $(this).addClass("activenav");
+
+$(function(){
+	$w = $('.projectImg').width();
+	$h = $('.projectImg').height();
+	$w2 = $w + 20;
+	$h2 = $h + 20;
+
+	$('.projectImg').hover(function(){
+		 $(this).stop().animate({height:$h2,width:$w2,left:"-10px",top:"-10px"},500);
+	},function(){
+		 $(this).stop().animate({height:$h,width:$w,left:"0px",top:"0px"},500);
+	});
 });
