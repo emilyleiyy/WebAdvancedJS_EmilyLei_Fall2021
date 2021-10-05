@@ -1,0 +1,90 @@
+{
+	"Works": [
+
+        {
+			"Name": "Wikibook",
+			"Category": "Book Design",
+			"Date": "2019.11-2019.12"
+		},
+		{
+			"Name": "Exhibition Event",
+			"Category": "Poster Design",
+			"Date": "2019.12"
+
+		},
+        {
+			"Name": "Personal Mantra Merch",
+			"Category": "Graphic Design",
+			"Date": "2019.10-2019.11"
+
+		},
+        {
+			"Name": "Reading Reader",
+			"Category": "Graphic Design",
+			"Date": "2020.02"
+
+		},
+        {
+			"Name": "Nescafe Redesign",
+			"Category": "Brand Visual Identity",
+			"Date": "2020.09-2020.11"
+
+		},
+        {
+			"Name": "SOLIFE",
+			"Category": "Brand Visual Identity",
+			"Date": "2020.11-2020.12"
+		},
+        {
+			"Name": "Hitchcock's Film",
+			"Category": "Poster Design",
+			"Date": "2020.12"
+
+		},
+        {
+			"Name": "SaveKwh",
+			"Category": "UIUX Design",
+			"Date": "2020.12-2021.01"
+
+		},
+        {
+			"Name": "Type Specimen Pamphlet",
+			"Category": "Graphic Design",
+			"Date": "2021.02-2021.03"
+
+		}
+	],
+
+
+
+    "WorkingExperiences":[
+
+        {
+			"Company": "Horizon Art Space",
+			"Duration": "2018.06-2018.08",
+			"Description1": "Help design posters and flyers for articles, exhibitions, and other activities",
+            "Description2":"Independently design the exhibition “memory coding” promotional poster"
+		},
+        {
+			"Company": "CineCina Film Festival",
+			"Duration": "2019.09.02-2019.12.02",
+			"Description1": "Responsible for planning offline promotion activities with Parsons School of design",
+            "Description2":"Participate in the promotional material design (more than 10 independent design works in total)",
+            "Description3": "Independently responsible for designing invitation letter, award certificate, premiere tickets, flyers for opening ceremony"
+		},
+        {
+			"Company": "People's Daily Online",
+			"Duration": "2020.06-2020.07",
+			"Description1": "Help design posters and flyers for articles, exhibitions, and other activities",
+            "Description2":"Independently design the exhibition “memory coding” promotional poster"
+		},
+        {
+			"Company": "Horizon Art Space",
+			"Duration": "2018.06-2018.08",
+			"Description1": "Independently designed and completed the promotional design of People's Art Show series",
+            "Description2":"Dragon Boat Festival creative video interactive design and visual design",
+            "Description3":"Assist in daily UIUX design, illustration, content layout, etc"
+		}
+        
+    ]
+}

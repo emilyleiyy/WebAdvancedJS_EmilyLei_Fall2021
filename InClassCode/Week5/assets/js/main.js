@@ -69,7 +69,7 @@
 
 // Pull info from JSON
 
-$.getJSON("assets/data.json", (data)=>{
+$.getJSON("../data.json", (data)=>{
 
    console.log(data.friends);
 
