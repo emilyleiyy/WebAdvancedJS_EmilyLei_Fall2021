@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week6_Midterm</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+</head>
+
+<body>
+
+  <!-- Opening -->
+  <section class="et-hero-tabs" id="opening">
+    <h1>Hi, welcome to my design world</h1>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-about">About</a>
+      <a class="et-hero-tab" href="#tab-mywork">My Work</a>
+      <a class="et-hero-tab" href="#tab-experience">Experience</a>
+      <a class="et-hero-tab" href="#tab-contact">Contact</a>
+    </div>
+  </section>
+
+
+
+  <!-- Main -->
+  <main class="et-main">
+
+
+    <!-- About -->
+    <section class="et-slide" id="tab-about">
+      <div class="intro">
+        <div class="intro-fl">
+          <img src="assets/image/intro.JPG" alt="" width="50%">
+        </div>
+        <div class="intro-fr">
+          Emily is a senior student of Parsons School of Design,
+          <br>
+          and majoring Communication Design
+        </div>
+      </div>
+    </section>
+
+
+    <!-- My work -->
+    <section class="et-slide" id="tab-mywork">
+      <h1>My Work</h1>
+      <div class="fn-clear work">
+        <script id="tpl" type="text/x-handlebars-template">
+          {{#each Works}}
+            <div class="fl ">
+              <div class="png">
+                <img src=./{{Image}}.jpg alt="">
+              </div>
+              <p class="tit">{{Name}}</p>
+              <p class="fn-clear">
+                <span class="fl">{{Category}}</span>
+                <br>
+                <span class="fr">{{Date}}</span>
+              </p>
+            </div>
+          {{/each}}
+        </script>
+      </div>
+      <br>
+      <br>
+      <br>
+    </section>
+
+
+    <!-- Experiene -->
+    <section class="et-slide" id="tab-experience">
+      <h1>Experience</h1>
+      <div class="fn-clear experience">
+        <script id="tpl2" type="text/x-handlebars-template">
+          {{#each Experience}}
+            <div class="fl ">
+              <p class="line">
+                <span class="tit">{{Company}}</span>
+              </p>
+              <p class="line">
+              <span class="tit">{{Duration}}</span>
+              </p>
+              <p class="line">
+                <span class="tit">Description</span>
+                <br>
+                <span class="txt">{{Description1}}</span>
+                <br>
+                <span class="txt">{{Description2}}</span>
+                <br>
+                <span class="txt">{{Description3}}</span>
+              </p>
+            </div>
+          {{/each}}
+        </script>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="et-slide" id="tab-contact">
+      <h1>Contact</h1>
+      <form id="form" class="topBefore">
+        <input id="name" type="text" placeholder="NAME">
+        <input id="email" type="text" placeholder="E-MAIL">
+        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <input id="submit" type="submit">
+      </form>
+    </section>
+
+
+
+  </main>
+
+
+
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type='text/javascript' src='assets/js/handlebars.js'></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+body {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.et-hero-tabs,
+.et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
+}
+
+#opening{
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -5%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: .5rem;
+}
+h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+}
+.et-hero-tabs-container.fixed {
+  position: fixed;
+  top: 0;
+}
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.et-hero-tab.sure {
+  border-bottom: 4px solid #726659;
+  box-sizing: border-box;
+}
+.et-hero-tab:hover {
+  color: white;
+  background: #b5aba0;
+  transition: all 0.5s ease;
+}
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #726659;
+  transition: left 0.3s ease;
+}
+
+
+
+.intro{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-fl{
+  display: flex;
+  justify-content: center;
+}
+.intro-fr{
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  margin-right: 15%;
+}
+
+
+
+.fn-clear.work,
+.fn-clear.experience {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+}
+.fn-clear.work > .fl,
+.fn-clear.experience > .fl {
+  float: left;
+  width: 33%;
+  padding: 30px;
+  box-sizing: border-box;
+  height: 440px;
+}
+.fn-clear.work > .fl .png,
+.fn-clear.experience > .fl .png {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.fn-clear.work > .fl .png img,
+.fn-clear.experience > .fl .png img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+.fn-clear.work > .fl .tit,
+.fn-clear.experience > .fl .tit {
+  font-weight: bold;
+  font-size: 16px;
+}
+.fn-clear.work > .fl p .flm,
+.fn-clear.experience > .fl p .flm,
+.fn-clear.work > .fl p .fr,
+.fn-clear.experience > .fl p .fr {
+  font-size: 12px;
+  color: #666;
+  line-height: 40px;
+}
+.fn-clear.experience > .fl {
+  width: 100%;
+  padding: 0;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+.line {
+  display: block;
+  font-size: 12px;
+  line-height: 40px;
+  color: #333;
+}
+.line .tit {
+  width: 120px;
+}
+.line .txt {
+  flex-grow: 1;
+  /*text-align: left;*/
+  text-align: center;
+  line-height: 40px;
+}
+.fn-clear {
+  overflow: hidden;
+}
+
+.png{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.png:hover{
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+/*
+.fn-clear .fl {
+  float: left;
+}
+.fn-clear .fr {
+  float: right;
+}
+*/
+
+
+
+/* Contact */
+#form {
+  position: relative;
+  margin: 50px auto 100px auto;
+  overflow:visible;
+}
+
+input {
+  font-size: 0.875em;
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color:black;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: black;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 100%;
+  max-width: 532px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  color: #b3aca7; 
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+
+
+/*media query*/
+@media (max-width: 800px) {
+  .et-hero-tabs,
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+  input,
+  textarea{
+    font-size: 0.5em;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    padding: 15px;
+  }
+  #submit{
+    font-size: 0.5em;
+    width: 100%;
+    max-width: 332px;
+  }
+  .fn-clear, .fl,.fr, .tit{
+    font-size: 12px;
+  }
+  .line{
+    line-height: 20px;
+  } .txt{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+/*work image layout*/
+*{margin:0;padding:0;list-style-type:none;}
+a,img{
+  border:0;
+}
+
+a{
+  color:#000;
+  outline:none;
+  text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+
+/* slider */
+#slider{
+  width:690px;
+  height:312px;
+  overflow:hidden;
+  padding:20px 15px;
+  position:relative;
+  margin:0 auto;
+}
+
+.scroll{
+  width:620px;
+  height:312px;
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+}
+
+.scrollContainer{
+  position: relative;
+  width:1815px;
+  left:0px;
+}
+.scrollContainer .current .inside{
+  width:230px;
+  height:288px;
+}
+
+.scrollContainer .panel{
+  width:170px;
+  height:235px;
+  float: left;
+  margin-right:25px;
+  display:inline;
+}
+
+.panel .inside{
+  display:block;
+  position:relative; 
+}
+
+.inside img{
+  height:100%;
+  width:100%;
+}
+
+.scroll li .inside span{
+  width:197px;
+  height:37px;
+  line-height:37px;
+  display:none;
+  position:absolute;
+  bottom:-17px;
+  left:16px;
+  background-color:#c69;
+  font-size:14px;
+  color:#FFF;
+  text-align:center;
+}
+
+.scroll li.current .inside span{
+  display:block;
+}
+
+.btnMode a.btn{
+  background:url('../image/index.png') no-repeat;
+}
+.btnMode a.btn{
+  width:20px;
+  height:39px;
+  position:absolute;
+  top:125px; 
+}
+.btnMode a.prev{
+  left:0;
+  background-position:0 -61px;
+}
+.btnMode a.prev:hover{
+  background-position:0 -102px;
+}
+.btnMode a.next{
+  right:0;
+  background-position:-50px -61px;
+}
+.btnMode a.next:hover{
+  background-position:-50px -102px;
+}
