@@ -1,0 +1,95 @@
+{
+	"Works": [
+		{
+			"Image": "assets/image/Wikibook_1",
+			"Name": "Wikibook",
+			"Category": "Book Design",
+			"Date": "2019.11-2019.12"
+		},
+		{
+			"Image": "assets/image/ExhibitionEvent_1",
+			"Name": "Exhibition Event",
+			"Category": "Poster Design",
+			"Date": "2019.12"
+		},
+		{
+			"Image": "assets/image/PersonalMantraMerch_1",
+			"Name": "Personal Mantra Merch",
+			"Category": "Graphic Design",
+			"Date": "2019.10-2019.11"
+		},
+		{
+			"Image": "assets/image/ReadingReader_1",
+			"Name": "Reading Reader",
+			"Category": "Graphic Design",
+			"Date": "2020.02"
+		},
+		{
+			"Image": "assets/image/NescafeRedesign_1",
+			"Name": "Nescafe Redesign",
+			"Category": "Brand Visual Identity",
+			"Date": "2020.09-2020.11"
+		},
+		{
+			"Image": "assets/image/SOLIFE_1",
+			"Name": "SOLIFE",
+			"Category": "Brand Visual Identity",
+			"Date": "2020.11-2020.12"
+		},
+		{
+			"Image": "assets/image/Hitchcock'sFilm_1",
+			"Name": "Hitchcock's Film",
+			"Category": "Poster Design",
+			"Date": "2020.12"
+		},
+		{
+			"Image": "assets/image/SaveKwh_1",
+			"Name": "SaveKwh",
+			"Category": "UIUX Design",
+			"Date": "2020.12-2021.01"
+		},
+		{
+			"Image": "assets/image/TypeSpecimenPamphlet_1",
+			"Name": "Type Specimen Pamphlet",
+			"Category": "Graphic Design",
+			"Date": "2021.02-2021.03"
+		}
+	],
+	"Experience": [
+		{
+			"Company": "Horizon Art Space",
+			"Duration": "2018.06 —— 2018.08",
+			"Description1": "Help design posters and flyers for articles, exhibitions, and other activities",
+			"Description2": "Independently design the exhibition “Memory Coding” promotional poster",
+			"Description3": "Assist in daily promotional design"
+		},
+		{
+			"Company": "CineCina Film Festival",
+			"Duration": "2019.09.02 —— 2019.12.02",
+			"Description1": "Responsible for planning offline promotion activities with Parsons School of design",
+			"Description2": "Participate in the promotional material design (more than 10 independent design works in total)",
+			"Description3": "Independently responsible for designing invitation letter, award certificate, premiere tickets, flyers for opening ceremony"
+		},
+		{
+			"Company": "People's Daily Online",
+			"Duration": "2020.06 —— 2020.07",
+			"Description1": "Help design posters and flyers for articles, exhibitions, and other activities",
+			"Description2": "Independently design the exhibition “memory coding” promotional poster",
+			"Description3": "Assist in daily promotional design"
+		},
+		{
+			"Company": "Beijing Contemporary",
+			"Duration": "2020.07 —— 2020.10",
+			"Description1": "Responsible for propaganda work online and offline promotion design",
+			"Description2": "Participate in the 2020 Beijing international art exposition the main visual poster design",
+			"Description3": "Assist to complete the docking work of participating galleries"
+		},
+		{
+			"Company": "Crescendo House",
+			"Duration": "2021.05 —— Now",
+			"Description1": "Independently design the booklet of “Labyrinth of Cinema” for promotion",
+			"Description2": "Respobsible for graphic designs on social media",
+			"Description3": "Develop logos, website, illustrations and other designs"
+		}
+	]
+}
