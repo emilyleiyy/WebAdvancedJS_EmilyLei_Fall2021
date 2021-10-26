@@ -1,0 +1,49 @@
+.App {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+h1{
+  font-size: 50px;
+  margin: 0;
+  padding-top: 5%;
+}
+
+h2{
+  font-size: 25px;
+  margin-top: 8%;
+}
+
+h3{
+  font-size: 18px;
+}
+
+p{
+  font-size: 14px;
+}
+
+.section{
+  margin: 0;
+  padding: 0 10%;
+}
+
+@media (max-width: 400px){
+  h1{
+    font-size: 25px;
+    padding-top: 10%;
+  }
+  h2{
+    font-size: 18px;
+    margin-top: 15%;
+  }
+  h3{
+    font-size: 12px;
+  }
+  p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
