@@ -1,0 +1,31 @@
+
+.navigate-container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+
+.navigate{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+}
+.navigate:hover {
+    color: white;
+    background: #b5aba0;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }

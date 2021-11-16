@@ -1,0 +1,25 @@
+.tile{
+    margin-top: 100px;
+}
+.tile-container{
+    width: calc(92vw/3);
+    margin: 1vw;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+img{
+    width: 50%;
+    margin-bottom: 30px;
+}
+img:hover{
+    filter: grayscale(.5);
+}
+h3{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 5px;
+}

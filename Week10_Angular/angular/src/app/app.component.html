@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<h1>My Work</h1>
+
+
+<div *ngFor="let tile of projects" class="tile-container">
+    <app-tile
+        img={{tile.img}} 
+        title={{tile.title}}
+        category={{tile.category}}
+        date={{tile.date}}
+        id={{tile.id}}
+    ></app-tile>
+</div>
+
+<h1>Experiences</h1>
+
+<div *ngFor="let experience of experience" class="experience-container">
+    <app-experience
+        company={{experience.company}}
+        duration={{experience.duration}}
+        discription={{experience.discription}}
+        discription2={{experience.discription2}}
+        discription3={{experience.discription3}}
+    ></app-experience>
+</div>
+
+
+
+<!-- <app-tile title="WikiBook" category="Book Design" date="2019.11-2019.12"></app-tile> -->
+
+<!-- <app-tile title="WikiBook" category="Book Design" date="2019.11-2019.12"></app-tile> -->
+ 
+
+<!-- <h1>{{title}}</h1> -->
+<!-- <h1>{{title.toUpperCase()}}</h1> -->
+<!-- <h3>This is a {{week}} week internship</h3> -->
+<!-- <h3>This is a {{week + week}} week internship</h3> -->

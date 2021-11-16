@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+body{
+    font-family: "Century Gothic", 'Lato', sans-serif;
+    text-align: center;
+    background-color: #eee;
+    line-height: 30px;
+}
+
+h1{
+     font-size: 50px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+ h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p{
+    font-size: 14px;
+    font-weight: lighter;
+}
