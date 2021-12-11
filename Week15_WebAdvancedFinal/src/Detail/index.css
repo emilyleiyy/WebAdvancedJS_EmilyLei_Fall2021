@@ -1,0 +1,35 @@
+header b{
+    font-weight: bold;
+    color: #aaa;
+    line-height: 20px;
+    margin-top: 20px;
+}
+header b:hover{
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: .3s;
+}
+.detail{
+    padding: 70px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    width: 32%;
+    /* align-content: flex-start;
+    position: fixed; */
+    position: fixed;
+}
+.imgs{
+    width: 65%;
+}
+.info p{
+    line-height: 30px;
+}
+.detail .imgs img{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    left: 490px;
+}
